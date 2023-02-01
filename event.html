@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+       .parent{
+           display: grid;
+           grid-template-columns: 100%;
+           border:1px solid rgb(3, 3, 3);
+       }
+       .header{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        
+       }
+       div{
+          
+       }
+       .img{
+            display: grid;
+           grid-template-columns: 30% 70%;
+       }
+       .submit{
+           position: relative;
+           left:20%;
+
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 30%;
+           left: 10%;
+           border:1px solid rgb(3, 3, 3);
+        }
+        .img{
+            border:1px solid rgb(3, 3, 3);
+           margin: 10px;
+        }
+       .input{
+           position: absolute;
+           right: 5%;
+
+
+       }
+       label{
+        position: absolute;
+        right: 29%;
+       }
+       select{
+        position: absolute;
+        right: 23%;
+       }
+       .box{
+        display: grid;
+        grid-template-columns:100%; 
+       }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <div class="header"> Event 1 <br>
+            Number of available seats: 23
+            </div>
+             <div class="img">
+                <div>
+                    <img src="event.png" alt="event">
+
+
+                </div>
+                <div>
+                <form action="">
+                <div class="box">
+                  <label for="name">Name:</label>
+                  <input class="input" type="text" name="name_id" id="name"><br>
+                </div>
+                <br>
+                <label for="email">Email:</label>
+                <input class="input"  type="email" name="email_id" id="email"><br>
+                <br>
+                <label for="phone">Phone No:</label>
+                <input class="input"  type="text" name="phone" id="phone"><br>
+                <br>
+                <label for="seats">Number of seats:</label>
+                <select  name="seats" id="seats">
+                <option value="1">1</option>
+                <option value="2">2</option>
+               </select><br>
+               <br>
+              <label for="nameattend">Name of Attendee 2:</label>
+              <input class="input"  type="text" name="name_od_attendee_2" id="nameattend"><br>
+              <br>
+              <div class="submit">
+                <input  type="submit" value="submit">
+                <input type="submit" value="cancel">
+            </div>
+            </form>
+        </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>
